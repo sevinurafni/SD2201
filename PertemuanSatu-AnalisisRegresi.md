@@ -81,7 +81,7 @@ ANOVA (Analisis of Variansi) model regresi sebagai berikut.
 | Sumber   | $Dk$    | $Jk$   |
 | -------- | ------- |------- |
 | Regresi  | 1       | $b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\}$      |
-| Residu   | $n-2$   | $b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\} - \{(\Sigma Y_i)^2 - \frac{(\Sigma Y_i)^2}{n}\}$         |
+| Residu   | $n-2$   | $\{(\Sigma Y_i)^2 - \frac{(\Sigma Y_i)^2}{n}\} - b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\}$                   |
 | Total    | $n-1$   | $(\Sigma Y_i)^2 - \frac{(\Sigma Y_i)^2}{n}$                  |
 
 Daftar Anova di atas dapat diubah menjadi bentuk daftar anova dengan meninjau regresi $a$, yang tidak lain merupakan sumber variansi yang dijadikan faktor koreksi.
@@ -118,3 +118,24 @@ untuk uji linearitas
 
 $F_{perhitungan} = {\frac{\text{(Jk Tuna cook) / (k-2)}}{(\text{Jk Galat) / (n-2})}}$
 
+## Varians Koefisien Regresi dan Taksiran Nilai Respon
+Dalam analisis regresi, kita menggunakan model regresi untuk memprediksi atau menjelaskan hubungan antara variabel independen dan variabel dependen. Dalam konteks ini, penting untuk memahami seberapa akurat dan stabil perkiraan koefisien regresi dari model. Varians koefisien regresi adalah salah satu ukuran yang digunakan untuk mengevaluasi stabilitas dan ketepatan estimasi koefisien regresi.
+
+
+Varians koefisien regresi mengacu pada variabilitas atau ketidakpastian dalam estimasi koefisien regresi dari model. Ada dua koefisien regresi yang umumnya diperkirakan dalam regresi linier:
+
+1. **Koefisien Kemiringan $(b)$**: Merepresentasikan seberapa besar perubahan dalam variabel dependen yang diharapkan akibat satu unit perubahan dalam variabel independen.
+
+2. **Koefisien Perpotongan $(a)$**: Merepresentasikan nilai variabel dependen ketika semua variabel independen adalah nol.
+
+3. **Varians Variabel Dependennya $(y)$**: Varians ini mengukur seberapa bervariasinya nilai-nilai variabel dependen $(y)$ dalam dataset.
+
+Varians koefisien regresi memberikan informasi penting tentang seberapa akurat dan stabilnya estimasi koefisien regresi dari model regresi. Dengan memahami variabilitas ini, kita dapat mengevaluasi keandalan model regresi dan tingkat kepastian dalam prediksi yang dihasilkan oleh model.
+
+Interpretasi Varians Koefisien Regresi
+
+1. **Varians Koefisien Kemiringan $(var(b))$**: Menunjukkan seberapa bervariasinya estimasi koefisien kemiringan dalam model regresi terhadap variasi dalam data. Semakin rendah varians ini, semakin stabil dan konsisten perkiraan koefisien kemiringan dari model regresi.
+
+2. **Varians Koefisien Perpotongan $(var(a))$**: Menunjukkan seberapa bervariasinya estimasi koefisien perpotongan dalam model regresi terhadap variasi dalam data. Varians ini juga mencerminkan seberapa konsisten estimasi perpotongan tersebut dalam berbagai sampel.
+
+3. **Varians Variabel Dependennya $(var (y))$**: Menunjukan seberapa jauh data tersebar dari nilai rata-rata variabel dependen, atau seberapa besar variasi yang terdapat dalam variabel dependen.
