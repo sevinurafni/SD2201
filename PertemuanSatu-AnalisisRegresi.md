@@ -118,6 +118,8 @@ untuk uji linearitas
 
 $F_{perhitungan} = {\frac{\text{(Jk Tuna cook) / (k-2)}}{(\text{Jk Galat) / (n-2})}}$
 
+Catatan: Tuna cocok atau heteroskedastisitas adalah salah satu masalah umum yang terjadi dalam regresi linear. Ini terjadi ketika variabilitas dari kesalahan (residuals) dalam model regresi tidak konstan di sepanjang rentang nilai dari variabel independen.
+
 ## Varians Koefisien Regresi dan Taksiran Nilai Respon
 Dalam analisis regresi, kita menggunakan model regresi untuk memprediksi atau menjelaskan hubungan antara variabel independen dan variabel dependen. Dalam konteks ini, penting untuk memahami seberapa akurat dan stabil perkiraan koefisien regresi dari model. Varians koefisien regresi adalah salah satu ukuran yang digunakan untuk mengevaluasi stabilitas dan ketepatan estimasi koefisien regresi.
 
