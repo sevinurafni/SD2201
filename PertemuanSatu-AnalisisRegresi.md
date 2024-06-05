@@ -80,8 +80,8 @@ ANOVA (Analisis of Variansi) model regresi sebagai berikut.
 
 | Sumber   | $Dk$    | $Jk$   |
 | -------- | ------- |------- |
-| Regresi  | 1       | $b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\}$      |
-| Residu   | $n-2$   | $\{(\Sigma Y_i)^2 - \frac{(\Sigma Y_i)^2}{n}\} - b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\}$                   |
+| Regresi  | 1       | $b\lbrace{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\rbrace}$      |
+| Residu   | $n-2$   | $\{(\Sigma Y_i)^2 - \frac{(\Sigma Y_i)^2}{n}\} - b\lbrace{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\rbrace}$                   |
 | Total    | $n-1$   | $(\Sigma Y_i)^2 - \frac{(\Sigma Y_i)^2}{n}$                  |
 
 Daftar Anova di atas dapat diubah menjadi bentuk daftar anova dengan meninjau regresi $a$, yang tidak lain merupakan sumber variansi yang dijadikan faktor koreksi.
@@ -89,8 +89,8 @@ Daftar Anova di atas dapat diubah menjadi bentuk daftar anova dengan meninjau re
 | Sumber          | $Dk$    | $Jk$                      |
 | --------        | ------- |-------                    |
 | Regresi $a$     | 1       | $\frac{(\Sigma Y_i)^2}{n}$                                                       |
-| Regresi $b/a$   | 1       | $b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\} $                               |
-| Residu          | $n-2$   | ${\Sigma Y_i}^2 - \frac{(\Sigma Y_i)^2}{n} - b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\}$                                         |
+| Regresi $b/a$   | 1       | $b\lbrace{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\rbrace} $                               |
+| Residu          | $n-2$   | ${\Sigma Y_i}^2 - \frac{(\Sigma Y_i)^2}{n} - b\lbrace{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\rbrace}$                                         |
 | Total    | $n-1$   | ${\Sigma Y_i}^2 $                |
 
 Catatan: Dk adalah derajat kebebasan, Jk adalah jumlah kuadrat.
@@ -104,8 +104,8 @@ Tabel di bawah ini adalah gabungan antara pengujian koefisien regresi dengan uji
 | Sumber          | $Dk$    | $Jk$    | $Rjk$           |
 | --------        | ------- |-------  |-------          |
 | Regresi $a$     | 1       | $\frac{(\Sigma Y_i)^2}{n}$                           | 
-| Regresi $b/a$   | 1       | $b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\} $   | $\text{Jk regresi b/a}$|
-| Residu          | $n-2$   | ${\Sigma Y_i}^2 - \frac{(\Sigma Y_i)^2}{n} - b\{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\}$             | ${\frac{\text{Jk Residu}}{n-2}}$                     |
+| Regresi $b/a$   | 1       | $b\lbrace{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\rbrace} $   | $\text{Jk regresi b/a}$|
+| Residu          | $n-2$   | ${\Sigma Y_i}^2 - \frac{(\Sigma Y_i)^2}{n} - b\lbrace{\Sigma X_i Y_i - \frac{(\Sigma X_i Y_i)}{n}\rbrace}$             | ${\frac{\text{Jk Residu}}{n-2}}$                     |
 |Tuna Cocok       | $k-2$   | $\text{Jk residu - Jk Galat}$           | ${\frac{\text{Jk Residu}}{k-2}}$|
 |Galat            | $n-k$   | $\Sigma\Sigma(Y_{ju} - \bar{Y})^2$
 | Total           | $n-1$   | ${\Sigma Y_i}^2 $        |
